@@ -1,0 +1,55 @@
+
+  Id CommandLine                                                                     
+  -- -----------                                                                     
+   1 Get-Location                                                                    
+   2 Get-Host                                                                        
+   3 Set-Location                                                                    
+   4 Get-Location                                                                    
+   5 Set-Location -Path C:/                                                          
+   6 Get-Location                                                                    
+   7 New-Item -Path Temp -ItemType Directory                                         
+   8 Set-Location Temp                                                               
+   9 New-Item -Path Rep1 -ItemType Directory                                         
+  10 New-Item -Path Rep2 -ItemType Directory                                         
+  11 Get-ChildItem                                                                   
+  12 New-Item -Path file1 -ItemType File                                             
+  13 New-Item -Path file2 -ItemType File                                             
+  14 New-Item -Path file3 -ItemType File                                             
+  15 Get-ChildItem                                                                   
+  16 Move-Item -Path file 1 -Destination Rep1                                        
+  17 Move-Item -Path file1 -Destination Rep1                                         
+  18 Get-ChildItem                                                                   
+  19 Get-ChildItem -Path Rep1                                                        
+  20 Get-ChildItem -Recurse                                                          
+  21 Move-Item -Path Rep1 -Destination Rep2                                          
+  22 Get-ChildItem -Recurse                                                          
+  23 Remove-Item -Path file3                                                         
+  24 Remove-Item Rep2 -Recurse                                                       
+  25 Get-Host                                                                        
+  26 Set-Location -Path C:\...                                                       
+  27 New-Item -Path EvenFolder -ItemType Directory                                   
+  28 New-Item -Path OddFolder -ItemType Directory                                    
+  29 Move-Item -Path File1 -Destination OddFolder                                    
+  30 Set-Location FolderTest1                                                        
+  31 Move-Item -Path File1 -Destination OddFolder                                    
+  32 Move-Item -Path File1 -Destination C:\OddFolder                                 
+  33 Move-Item -Path File3 -Destination C:\OddFolder                                 
+  34 Move-Item -Path File5 -Destination C:\OddFolder                                 
+  35 Move-Item -Path File2 -Destination C:\EvenFolder                                
+  36 Move-Item -Path File4 -Destination C:\EvenFolder                                
+  37 Set-Location -Path C:\FolderTest2                                               
+  38 Move-Item -Path File6 -Destination C:\EvenFolder                                
+  39 Move-Item -Path File8 -Destination C:\EvenFolder                                
+  40 Move-Item -Path File10 -Destination C:\EvenFolder                               
+  41 Move-Item -Path File7 -Destination C:\OddFolder                                 
+  42 Move-Item -Path File9 -Destination C:\OddFolder                                 
+  43 Set-Location -Path C:\                                                          
+  44 Get-History > historique.txt                                                    
+  45 Get-History > C:\historique.txt                                                 
+  46 Get-History > C:\ historique.txt                                                
+  47 Get-History | New-Item -Path historique.txt -ItemType File                      
+  48 Get-History                                                                     
+  49 New-Item -Path historique.tkt -ItemType File                                    
+  50 Set-Location EvenFolder                                                         
+  51 Get-History | New-Item -Path historique.txt -ItemType File                      
+
